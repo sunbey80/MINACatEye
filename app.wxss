@@ -1,4 +1,4 @@
 .container,view,text{
-	font-size: 28rpx;
+	font-size: 24rpx;
 	font-family: 'Microsoft Yahei';
 }

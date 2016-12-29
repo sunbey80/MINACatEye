@@ -3,13 +3,16 @@
     <view class="swiper" indicator-dots="true" interval="3000">
     	<swiper>
     		<swiper-item>
-    			<image src="/images/loading.png"></image>
+    			<image src="/images/swiper1.jpg"></image>
     		</swiper-item>
+            <swiper-item>
+                <image src="/images/swiper2.jpg"></image>
+            </swiper-item>
     	</swiper>
     </view>
-    <view class="movies">
+    <view class="movies" wx:for="{{[1,2,3,4,5,6]}}">
     	<view class="cover">
-    		<image src="/images/loading.png"></image>
+    		<image src="/images/movie.jpg"></image>
     	</view>
     	<view class="tit-sum">
     		<text class="tit">情圣</text>
@@ -20,6 +23,5 @@
     		<text class="score"><text class="numb">23647</text>人想看</text>
     		<text class="buy">预售</text>
     	</view>
-    </view>
-    <navigator>跳转到新页面</navigator>
+    </view>    
 </view>

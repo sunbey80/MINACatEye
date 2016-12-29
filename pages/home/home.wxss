@@ -1,13 +1,66 @@
 .header{
+	position: fixed;
+	top: 0;
+	width: 100%;
 	height: 100rpx;
-	border-bottom: 1px solid #d8d8d8;
-	background-color: #ffffff;
+	color: #ffffff;
+	background-color: #d24b48;
+	z-index: 2;
 }
 .swiper swiper{
 	width: 100%;
-	height: 350rpx;
+	height: 175rpx;
+	margin-top: 100rpx;
 }
 .swiper swiper image{
-	width: 750rpx;
-	height: 350rpx;
+	width: 100%;
+	height: 175rpx;
+}
+.movies{
+	display: flex;
+	padding: 20rpx 0;
+	margin-left: 20rpx;
+	border-bottom: 1px solid #d8d8d8;
+}
+.movies .cover image{
+	width: 135rpx;
+	height: 187rpx;
+}
+.movies .tit-sum{
+	padding-left: 20rpx;
+	flex-grow: 1;
+}
+.movies .tit{
+	display: block;
+	font-size: 32rpx;
+	line-height: 75rpx;
+}
+.movies .sum,
+.movies .oninfor{
+	display: block;
+	color: #666666;
+	line-height: 50rpx;
+}
+.movies .score-buy{
+	text-align: right;
+	padding-right: 20rpx;
+}
+.movies .score{
+	display: block;
+	color: #f5953f;
+	line-height: 75rpx;
+}
+.movies .score .numb{
+	font-size: 32rpx;
+}
+.movies .buy{
+	display: inline-block;
+	width: 108rpx;
+	height: 60rpx;
+	text-align: center;
+	color: #058ee7;
+	line-height: 60rpx;
+	border: 1px solid #058ee7;
+	border-radius: 10rpx;
+	margin-top: 24rpx;
 }
