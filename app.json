@@ -1,10 +1,37 @@
 {
   "pages":[
-    "pages/home/home"
+    "pages/home/home",
+    "pages/cinema/cinema",
+    "pages/bbs/bbs",
+    "pages/me/me"
   ],
   "window":{
     "navigationBarBackgroundColor":"#d24b48",
     "navigationBarTextStyle":"#ffffff",
     "navigationBarTitleText":"CatEye"
+  },
+  "tabBar":{
+  	"color": "#666666",
+  	"selectedColor": "#d24b48",
+  	"borderStyle": "white",
+  	"backgroundColor": "#f7f7f7",
+  	"list": [
+  		{
+  			"pagePath": "pages/home/home",
+  			"text": "电影"
+  		},
+  		{
+  			"pagePath": "pages/cinema/cinema",
+  			"text": "影院"
+  		},
+  		{
+  			"pagePath": "pages/bbs/bbs",
+  			"text": "社区"
+  		},
+  		{
+  			"pagePath": "pages/me/me",
+  			"text": "我的"
+  		}
+  	]
   }
 }

@@ -1,1 +1,13 @@
-/* pages/home/home.wxss */
+.header{
+	height: 100rpx;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #ffffff;
+}
+.swiper swiper{
+	width: 100%;
+	height: 350rpx;
+}
+.swiper swiper image{
+	width: 750rpx;
+	height: 350rpx;
+}

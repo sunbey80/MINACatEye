@@ -1,2 +1,25 @@
-<!--pages/home/home.wxml-->
-<text>Welcome to CatEye</text>
+<view class="container">
+    <view class="header"></view>
+    <view class="swiper" indicator-dots="true" interval="3000">
+    	<swiper>
+    		<swiper-item>
+    			<image src="/images/loading.png"></image>
+    		</swiper-item>
+    	</swiper>
+    </view>
+    <view class="movies">
+    	<view class="cover">
+    		<image src="/images/loading.png"></image>
+    	</view>
+    	<view class="tit-sum">
+    		<text class="tit">情圣</text>
+    		<text class="sum">哇哈哈哈哈，爆笑把年跨</text>
+    		<text class="oninfor">今天54家影院放映234场</text>
+    	</view>
+    	<view class="score-buy">
+    		<text class="score"><text class="numb">23647</text>人想看</text>
+    		<text class="buy">预售</text>
+    	</view>
+    </view>
+    <navigator>跳转到新页面</navigator>
+</view>
