@@ -1,0 +1,10 @@
+{
+  "pages":[
+    "pages/home/home"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#d24b48",
+    "navigationBarTextStyle":"#ffffff",
+    "navigationBarTitleText":"CatEye"
+  }
+}
