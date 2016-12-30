@@ -6,6 +6,56 @@
 	color: #ffffff;
 	background-color: #d24b48;
 	z-index: 2;
+	display: flex;
+}
+.header .location{
+	position: relative;
+	text-align: center;
+	line-height: 100rpx;
+	padding-left: 40rpx;
+	padding-right: 30rpx;
+}
+.header .location:after{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 40rpx;
+	right: 0rpx;
+	width: 14rpx;
+	height: 14rpx;
+	transform: rotate(-45deg);
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+.header .switch{
+	line-height: 100rpx;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+.header .switch .switch-con{
+	display: inline-flex;
+	width: 400rpx;
+	height: 65rpx;
+	line-height: 65rpx;
+	margin-top: 17rpx;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	overflow: hidden;
+}
+.header .switch text{
+	flex-grow: 1;
+	text-align: center;
+}
+.header .switch text.cur{
+	color: #d24b48;
+	background-color: #ffffff;
+}
+.header .search{
+	width: 100rpx;
+	height: 100rpx;
+	background: url(/images/search.png) center center no-repeat;
+	background-size: 60% auto;
 }
 .swiper swiper{
 	width: 100%;

@@ -18,19 +18,27 @@
   	"list": [
   		{
   			"pagePath": "pages/home/home",
-  			"text": "电影"
+  			"text": "电影",
+  			"iconPath": "images/movie.png",
+  			"selectedIconPath": "images/movieon.png"
   		},
   		{
   			"pagePath": "pages/cinema/cinema",
-  			"text": "影院"
+  			"text": "影院",
+  			"iconPath": "images/cinema.png",
+  			"selectedIconPath": "images/cinemaon.png"
   		},
   		{
   			"pagePath": "pages/bbs/bbs",
-  			"text": "社区"
+  			"text": "社区",
+  			"iconPath": "images/bbs.png",
+  			"selectedIconPath": "images/bbson.png"
   		},
   		{
   			"pagePath": "pages/me/me",
-  			"text": "我的"
+  			"text": "我的",
+  			"iconPath": "images/me.png",
+  			"selectedIconPath": "images/meon.png"
   		}
   	]
   }
