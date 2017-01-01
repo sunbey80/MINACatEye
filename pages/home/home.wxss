@@ -114,3 +114,7 @@
 	border-radius: 10rpx;
 	margin-top: 24rpx;
 }
+.movies .buy-can{
+	color: #d24b48;
+	border-color: #d24b48;
+}

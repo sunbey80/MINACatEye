@@ -3,8 +3,8 @@
     	<view class="location">宁波</view>
     	<view class="switch">
     		<view class="switch-con">
-	    		<text class="cur">正在上映</text>
-	    		<text>即将上映</text>
+	    		<text class="{{onsale==='true'?'cur':''}}" bindtap="switchOnSale" data-onsale="true">正在上映</text>
+	    		<text class="{{onsale==='false'?'cur':''}}" bindtap="switchOnSale" data-onsale="false">即将上映</text>
     		</view>
     	</view>
     	<view class="search"></view>
@@ -23,18 +23,28 @@
             </block>
     	</swiper>
     </view>
-    <view class="movies" wx:for="{{[1,2,3,4,5,6]}}">
+    <view class="movies" wx:for="{{movies}}" wx:key="{{_id}}">
     	<view class="cover">
-    		<image src="/images/movie.jpg"></image>
+            <!-- <image src="http://{{G_DOMAIN + item.image}}"></image> -->
+    		<image src="http://{{G_DOMAIN}}/image/{{item.image}}"></image>
     	</view>
     	<view class="tit-sum">
-    		<text class="tit">情圣</text>
-    		<text class="sum">哇哈哈哈哈，爆笑把年跨</text>
-    		<text class="oninfor">今天54家影院放映234场</text>
+    		<text class="tit">{{item.title}}</text>
+    		<text class="sum">{{item.summary}}</text>
+            <text class="oninfor">{{item.oninfor}}</text>
     	</view>
     	<view class="score-buy">
-    		<text class="score"><text class="numb">23647</text>人想看</text>
-    		<text class="buy">预售</text>
+            <view wx:if="{{item.sale === '2'}}">
+                <text class="score"><text class="numb">{{item.score}}</text>分</text>
+                <text class="buy buy-can">购买</text>
+            </view>
+            <view wx:if="{{item.sale === '1'}}">
+                <text class="score"><text class="numb">{{item.want}}</text>人想看</text>
+                <text class="buy">预售</text>
+            </view>
+            <view wx:if="{{item.sale === '0'}}">
+                <text class="score"><text class="numb">{{item.want}}</text>人想看</text>
+            </view>
     	</view>
     </view>    
 </view>
