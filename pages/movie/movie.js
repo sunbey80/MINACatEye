@@ -3,18 +3,10 @@ var app = getApp()
 Page({
     data:{
         G_DOMAIN: app.globalData.G_DOMAIN,
-        onsale: 'true'
+        wantToSee: false
     },
-    onLoad:function(){
-
-        this.findMovies({onsale:this.data.onsale})
-        
-    },
-    switchOnSale: function(e){
-        this.setData({
-            onsale: e.target.dataset.onsale
-        })
-        this.findMovies({onsale:this.data.onsale})
+    onLoad:function(e){
+        this.findMovies({_id:e.movieId})
     },
     findMovies: function(queryData){
         var that = this
@@ -25,14 +17,17 @@ Page({
             success: function(res){
                 // success
                 that.setData({
-                    movies:res.data
+                    movie:res.data[0]
                 })
             }
         })
     },
-    goDetail: function(e){
-        wx.navigateTo({
-          url: '../movie/movie?movieId='+e.currentTarget.dataset.movieId
+    wantToSee: function(){
+        this.setData({
+            wantToSee: !this.data.wantToSee
         })
+    },
+    goComment: function(){
+        
     }
 })

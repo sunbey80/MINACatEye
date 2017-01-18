@@ -23,28 +23,30 @@
             </block>
     	</swiper>
     </view>
-    <view class="movies" wx:for="{{movies}}" wx:key="{{_id}}">
-    	<view class="cover">
-            <!-- <image src="http://{{G_DOMAIN + item.image}}"></image> -->
-    		<image src="http://{{G_DOMAIN}}/movieImgs/{{item.image}}"></image>
-    	</view>
-    	<view class="tit-sum">
-    		<text class="tit">{{item.title}}</text>
-    		<text class="sum">{{item.summary}}</text>
-            <text class="oninfor">{{item.oninfor}}</text>
-    	</view>
-    	<view class="score-buy">
-            <view wx:if="{{item.sale === '2'}}">
-                <text class="score"><text class="numb">{{item.score}}</text>分</text>
-                <text class="buy buy-can">购买</text>
+    <view class="movies">
+        <view class="movie" wx:for="{{movies}}" wx:key="{{_id}}" bindtap="goDetail" data-movie-id="{{item._id}}">
+            <view class="cover">
+                <!-- <image src="http://{{G_DOMAIN + item.image}}"></image> -->
+                <image src="http://{{G_DOMAIN}}/movieImgs/{{item.image}}"></image>
             </view>
-            <view wx:if="{{item.sale === '1'}}">
-                <text class="score"><text class="numb">{{item.want}}</text>人想看</text>
-                <text class="buy">预售</text>
+            <view class="tit-sum">
+                <text class="tit">{{item.title}}</text>
+                <text class="sum">{{item.summary}}</text>
+                <text class="oninfor">{{item.oninfor}}</text>
             </view>
-            <view wx:if="{{item.sale === '0'}}">
-                <text class="score"><text class="numb">{{item.want}}</text>人想看</text>
+            <view class="score-buy">
+                <view wx:if="{{item.sale === '2'}}">
+                    <text class="score"><text class="numb">{{item.score}}</text>分</text>
+                    <text class="buy buy-can">购买</text>
+                </view>
+                <view wx:if="{{item.sale === '1'}}">
+                    <text class="score"><text class="numb">{{item.want}}</text>人想看</text>
+                    <text class="buy">预售</text>
+                </view>
+                <view wx:if="{{item.sale === '0'}}">
+                    <text class="score"><text class="numb">{{item.want}}</text>人想看</text>
+                </view>
             </view>
-    	</view>
-    </view>    
+        </view>
+    </view>
 </view>

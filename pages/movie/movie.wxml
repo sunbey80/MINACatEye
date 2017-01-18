@@ -1,0 +1,29 @@
+<view class="container">
+	<view class="parameters">
+		<view class="paramTop">
+			<view class="paramImg">
+				<image wx:if="{{movie.image}}" src="http://{{G_DOMAIN}}/movieImgs/{{movie.image}}"></image>
+			</view>
+			<view class="paramList">
+				<text>{{movie.title}}</text>
+				<text>{{movie.title_en}}</text>
+				<text>{{movie.score}}</text>
+				<text>7.4万人评</text>
+				<text>{{movie.area}}/{{movie.last_time}}分钟</text>
+				<text>{{movie.oninfor}}</text>
+			</view>
+			<view class="paramBtns">
+				<view class="btnWant btnWant{{wantToSee?1:0}}" ontap="wantToSee">{{wantToSee?"已":""}}想看</view>
+				<view class="btnStar" ontap="goComment">评分</view>
+			</view>
+		</view>
+		<view class="paramBtm">
+			<text>{{movie.detail}}</text>
+		</view>
+	</view>
+	<view class="actors"></view>
+	<view class="bookings"></view>
+	<view class="videos"></view>
+	<view class="comments"></view>
+	<view class="btnBuy">优惠购票</view>
+</view>

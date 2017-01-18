@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/movie/movie",
     "pages/cinema/cinema",
-    "pages/bbs/bbs",
     "pages/me/me"
   ],
   "window":{
@@ -27,12 +27,6 @@
   			"text": "影院",
   			"iconPath": "images/cinema.png",
   			"selectedIconPath": "images/cinemaon.png"
-  		},
-  		{
-  			"pagePath": "pages/bbs/bbs",
-  			"text": "社区",
-  			"iconPath": "images/bbs.png",
-  			"selectedIconPath": "images/bbson.png"
   		},
   		{
   			"pagePath": "pages/me/me",

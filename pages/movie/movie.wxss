@@ -1,0 +1,94 @@
+.parameters{
+	margin-bottom: 20rpx;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #ffffff;
+}
+.paramTop{
+	padding: 20rpx 30rpx;
+	color: #999999;
+	line-height: 40rpx;
+	background-color: #333;
+}
+.paramImg{
+	float: left;
+}
+.paramImg image{
+	width: 200rpx;
+	height: 278rpx;
+	border: 1px solid #666666;
+}
+.paramList{
+	float: right;
+	width: 460rpx;
+}
+.paramList text{
+	display: block;
+}
+.paramBtm{
+	padding: 20rpx 30rpx;
+}
+.paramBtm text{
+	color: #666666;
+	line-height: 40rpx;
+}
+.paramBtns{
+	clear: both;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20rpx
+}
+.paramBtns view{
+	width: 48%;
+	flex-shrink: 0;
+	line-height: 60rpx;
+	color: #ccc;
+	background-color: #666;
+	border-radius: 6rpx;
+	text-align: center;
+}
+.paramBtns .btnWant1{
+	color: #ffff00;
+}
+
+.actors{
+	height: 150rpx;
+	margin-bottom: 20rpx;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #ffffff;
+}
+
+.bookings{
+	height: 100rpx;
+	margin-bottom: 20rpx;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #ffffff;
+}
+
+.videos{
+	height: 150rpx;
+	margin-bottom: 20rpx;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #ffffff;
+}
+
+.comments{
+	height: 500rpx;
+	margin-bottom: 110rpx;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #ffffff;
+}
+
+.btnBuy{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	line-height: 90rpx;
+	color: #ffffff;
+	text-align: center;
+	background-color: #d24b48;
+}
